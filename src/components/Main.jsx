@@ -1,17 +1,41 @@
 import { useSelector } from "react-redux";
-import { selectCampaignData } from "../redux/campaignSlice";
-import Campaign from "./Campaign";
+import { selectCampaignData, selectSearchTerm } from "../redux/campaignSlice";
+import CampaignResults from "./CampaignResult";
+
+import Search from "./Search";
 
 const Main = () => {
   const campaignData = useSelector(selectCampaignData);
+  const searchTerm = useSelector(selectSearchTerm);
 
   if (!campaignData) {
     return <p>Loading...</p>;
   }
 
-  return campaignData.map((campaign) => {
-    return <Campaign key={campaign.id} campaign={campaign} />;
-  });
+  let filtered = [...campaignData];
+  if (searchTerm) {
+    filtered = filtered.filter((campaign) => {
+      const searchTermLC = searchTerm.toLowerCase();
+
+      return (
+        campaign.PageName.toLowerCase().includes(searchTermLC) ||
+        campaign.PageOwner.toLowerCase().includes(searchTermLC) ||
+        campaign.EventName.toLowerCase().includes(searchTermLC)
+      );
+    });
+  }
+
+  return (
+    <>
+      <Search />
+
+      <div className="searchResults">
+        {filtered.map((campaign) => {
+          return <CampaignResults key={campaign.id} campaign={campaign} />;
+        })}
+      </div>
+    </>
+  );
 };
 
 export default Main;
