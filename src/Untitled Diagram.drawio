@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-02-27T19:45:09.978Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="Nm9cISn1o70FNAo3BCnX" version="23.1.7" type="github">
+  <diagram name="Page-1" id="44gWFXX3Tn3-xHw3MdVl">
+    <mxGraphModel dx="974" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-1" value="App&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Get initial data&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-2" value="Interface" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-3" value="Header" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-4" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-5" value="Search" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-6" value="Result" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="310" width="75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-7" value="Profile" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="370" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-8" value="Stats" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="370" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-9" value="Controls" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="370" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-10" value="Login in / register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ej-GVQxYpmxVys2EFrTP-12" value="Main" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
