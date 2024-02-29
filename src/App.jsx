@@ -12,8 +12,6 @@ import "./css/App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
-import Index from "./components/account";
-
 const App = () => {
   const dispatch = useDispatch();
   const message = useSelector(selectMessage);
@@ -49,8 +47,7 @@ const App = () => {
   return (
     <>
       <ToastContainer />
-      {/* <Interface /> */}
-      <Index />
+      <Interface />
     </>
   );
 };

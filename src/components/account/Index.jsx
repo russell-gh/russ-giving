@@ -38,6 +38,18 @@ const Index = () => {
       {screen === 0 && <Signup />}
       {screen === 1 && <Login />}
       {screen === 2 && <Dashboard />}
+
+      {screen === 0 ? (
+        <Signup />
+      ) : screen === 1 ? (
+        <Login />
+      ) : screen === 2 ? (
+        <p></p>
+      ) : screen === 3 ? (
+        <p></p>
+      ) : (
+        <p></p>
+      )}
     </>
   );
 };

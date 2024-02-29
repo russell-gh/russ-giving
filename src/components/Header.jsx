@@ -1,8 +1,11 @@
+import Nav from "./Nav";
+
 const Header = () => {
   return (
     <div>
-      <h1>Russs Giving</h1>
+      <h1>Russ Giving</h1>
       <p>Please give money!</p>
+      <Nav />
     </div>
   );
 };

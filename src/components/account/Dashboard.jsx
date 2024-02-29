@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 const Dashboard = () => {
   const dispatch = useDispatch();
   const donations = useSelector(selectDonations);
-  console.log(donations);
+
   return (
     <>
       <h2>Dashboard</h2>
