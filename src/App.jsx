@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import {
+  selectCampaignData,
   selectMessage,
   setCampaignData,
   setMessage,
@@ -15,11 +16,14 @@ import { useSelector } from "react-redux";
 const App = () => {
   const dispatch = useDispatch();
   const message = useSelector(selectMessage);
+  const campaignData = useSelector(selectCampaignData);
 
   useEffect(() => {
+    console.log("UE Ran", message);
     if (!message) return;
 
     toast(message);
+
     setTimeout(() => {
       dispatch(setMessage(""));
     }, 300);
@@ -41,13 +45,15 @@ const App = () => {
   };
 
   useEffect(() => {
-    getIntialCampaigns();
+    if (!campaignData) {
+      getIntialCampaigns();
+    }
   }, []);
 
   return (
     <>
-      <ToastContainer />
       <Interface />
+      <ToastContainer />
     </>
   );
 };

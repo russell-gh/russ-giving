@@ -39,7 +39,7 @@ const Index = () => {
       {screen === 1 && <Login />}
       {screen === 2 && <Dashboard />}
 
-      {screen === 0 ? (
+      {/* {screen === 0 ? (
         <Signup />
       ) : screen === 1 ? (
         <Login />
@@ -49,7 +49,7 @@ const Index = () => {
         <p></p>
       ) : (
         <p></p>
-      )}
+      )} */}
     </>
   );
 };

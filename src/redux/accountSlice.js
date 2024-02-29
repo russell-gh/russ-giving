@@ -11,7 +11,7 @@ const initialState = {
   ],
 };
 
-const diskData = getStore();
+const diskData = getStore("account");
 
 export const accountSlice = createSlice({
   name: "account",
@@ -23,20 +23,31 @@ export const accountSlice = createSlice({
     setNewUser: (state, { payload }) => {
       payload.password = sha256(payload.password + "cohort16");
       state.user = payload;
-      saveStore(state);
+      saveStore("account", state);
     },
     setScreen: (state, { payload }) => {
       state.screen = payload;
-      saveStore(state);
+      saveStore("account", state);
     },
     setLogginIn: (state) => {
       state.loggedIn = !state.loggedIn;
-      saveStore(state);
+      saveStore("account", state);
+    },
+    setNewDonation: (state, { payload }) => {
+      state.donations.push({
+        id: payload.campaign.id,
+        value: payload.value,
+        campaign: payload.campaign,
+        date: Date.now(),
+      });
+
+      saveStore("account", state);
     },
   },
 });
 
-export const { setNewUser, setScreen, setLogginIn } = accountSlice.actions;
+export const { setNewUser, setScreen, setLogginIn, setNewDonation } =
+  accountSlice.actions;
 
 //gets data from store
 // export const selectMessage = (state) => state.campaign.message;

@@ -17,7 +17,7 @@ const Dashboard = () => {
         donations.map((donation) => {
           return (
             <div>
-              <h1>{new Date(donation.date).toDateString()}</h1>
+              <h1>{new Date(donation.date).toTimeString()}</h1>
               <p>Cause ID: {donation.id}</p>
               <p>Value: &pound;{donation.value}</p>
             </div>
