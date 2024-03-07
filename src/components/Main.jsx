@@ -1,7 +1,9 @@
 import { useSelector } from "react-redux";
 import { selectCampaignData, selectSearchTerm } from "../redux/campaignSlice";
 import CampaignResults from "./CampaignResult";
-
+import { useEffect, useRef, useState, useLayoutEffect } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import Search from "./Search";
 
 const Main = () => {
